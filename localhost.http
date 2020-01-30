@@ -7,13 +7,13 @@
 
 
 ###
-GET http://localhost:8080/actuator
+GET {{host}}/actuator
 Accept: application/json
 
 <> 2020-01-14T010607.200.json
 
 ###
-POST http://localhost:8080/api/phoneBook/add
+POST {{host}}/api/phoneBook/add
 Content-Type: application/json
 
 {"fullName":"My title1", "emailAddrs":"My Author1"}
@@ -29,7 +29,7 @@ Content-Type: application/json
 ###
 ###
 
-GET http://localhost:8080/api/phoneBook
+GET {{host}}/api/phoneBook
 Accept: application/json
 
 <> 2020-01-14T011636.200.json
